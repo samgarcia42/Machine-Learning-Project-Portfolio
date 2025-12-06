@@ -73,8 +73,8 @@ El modelo final **XGBoost Regressor** con hiperparámetros optimizados logró lo
 
 | Métrica | Valor |
 |---------|-------|
-| RMSE (Test) | ~60.26 |
-| RMSE (Train) | ~41.48 |
+| RMSE (Test) | ~53.002 |
+| RMSE (Train) | ~15.174 |
 
 ### Hiperparámetros del Modelo Final:
 ```python
@@ -83,9 +83,9 @@ XGBRegressor(
     subsample=0.6,
     reg_lambda=1,
     reg_alpha=0.01,
-    n_estimators=800,
+    n_estimators=1000,
     min_child_weight=5,
-    max_depth=4,
+    max_depth=6,
     learning_rate=0.05,
     gamma=0.1,
     colsample_bytree=1.0
@@ -139,8 +139,7 @@ jupyter notebook Modelado_Demanda_bikes_Seul.ipynb
 
 ## 📝 Conclusiones
 
-- Las variables más influyentes en la demanda de bicicletas son la **temperatura**, la **hora del día** y la **estación del año**.
-- Los modelos de ensemble (XGBoost, LightGBM, Gradient Boosting) superan significativamente a los modelos lineales tradicionales.
+- Los modelos de ensemble (XGBoost, LightGBM) superan significativamente a los modelos lineales tradicionales.
 - La optimización de hiperparámetros mejora notablemente el rendimiento del modelo.
 - El modelo puede ser utilizado para optimizar la distribución de bicicletas según condiciones climáticas y temporales.
 
