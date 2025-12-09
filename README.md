@@ -70,22 +70,20 @@ El proyecto incluye la implementación y comparación de los siguientes algoritm
 
 ### 📚 Tecnologías y Librerías Utilizadas
 
-```python
-# Análisis y Manipulación de Datos
+**Análisis y Manipulación de Datos:**
 - pandas
 - numpy
 - scipy
 
-# Visualización
+**Visualización:**
 - matplotlib
 - seaborn
 - plotly
 
-# Machine Learning
+**Machine Learning:**
 - scikit-learn
 - xgboost
 - lightgbm
-```
 
 ### 📈 Resultados
 
