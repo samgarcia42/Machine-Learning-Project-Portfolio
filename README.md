@@ -87,12 +87,7 @@ El proyecto incluye la implementación y comparación de los siguientes algoritm
 
 ### 📈 Resultados
 
-El notebook incluye análisis detallados de:
-- Distribución de la demanda de bicicletas (con asimetría positiva)
-- Patrones temporales y estacionales
-- Impacto de variables meteorológicas
-- Comparación de métricas de rendimiento entre modelos
-- Modelo óptimo con hiperparámetros ajustados
+En este caso se observo que los modelos ensemble tuvieron un mejor rendimiento que los modelos lineales o de otro tipo, siendo el XGBoost el que mejor rendimiento obtuvo.
 
 ### 🔍 Cómo Utilizar este Proyecto
 
