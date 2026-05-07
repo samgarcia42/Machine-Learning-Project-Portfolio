@@ -1,10 +1,5 @@
 # Modelado de Riesgo Crediticio — Scorecard + Modelos Ensemble
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-orange.svg)](https://scikit-learn.org/)
-[![XGBoost](https://img.shields.io/badge/XGBoost-2.x-brightgreen.svg)](https://xgboost.readthedocs.io/)
-[![LightGBM](https://img.shields.io/badge/LightGBM-4.x-yellowgreen.svg)](https://lightgbm.readthedocs.io/)
-
 ## Descripción General
 
 Este proyecto resuelve un problema clásico de **riesgo crediticio**: estimar la **probabilidad de impago (PD)** de un solicitante de un préstamo personal y traducir esa probabilidad a una decisión de negocio (aprobar / rechazar) y a un **precio (tasa de interés)** acorde al riesgo.
@@ -108,64 +103,6 @@ con parámetros documentados (`LGD = 0.4`, `COF = 1.5 %`, `OPEX = 2 %`, `MARGIN 
 - **Visualización:** `matplotlib`, `seaborn`, `plotly`, `missingno`
 - **Serialización / despliegue:** `joblib`
 - **Entorno:** Python 3.10+, Jupyter Notebook
-
-## Instrucciones de Uso
-
-### Opción A — solo leer el análisis
-
-Abre directamente la versión renderizada del notebook en tu navegador:
-
-```
-Challenge_Riesgo_Crediticio.html
-```
-
-Contiene el flujo completo con código, gráficas y outputs ya ejecutados.
-
-### Opción B — reproducir localmente
-
-**1. Clonar el repositorio**
-
-```bash
-git clone https://github.com/samgarcia42/Machine-Learning-Project-Portfolio.git
-cd Machine-Learning-Project-Portfolio
-```
-
-**2. Crear entorno virtual e instalar dependencias**
-
-```bash
-python -m venv .venv
-source .venv/bin/activate          # Linux / macOS
-# .venv\Scripts\activate           # Windows PowerShell
-
-pip install --upgrade pip
-pip install pandas numpy scikit-learn xgboost lightgbm optbinning \
-            matplotlib seaborn plotly missingno joblib scipy jupyter
-```
-
-**3. Descargar el dataset**
-
-Descarga `Loan_status_2007-2020Q3.gzip` de Lending Club (público en Kaggle / repositorios oficiales) y colócalo **en la misma carpeta del notebook**. El diccionario de variables `LCDataDictionary.xlsx` también se asume presente en esa carpeta.
-
-> El dataset (~1.7 GB) y los pesos del modelo entrenados no se versionan en este repositorio.
-
-**4. Ejecutar el notebook**
-
-```bash
-jupyter notebook Challenge_Riesgo_Crediticio.ipynb
-```
-
-Ejecuta las celdas en orden (`Run All`). El notebook genera el modelo, el scorecard, las gráficas de evaluación y serializa el pipeline final en la carpeta `models/`.
-
-**5. Inferencia en lote**
-
-Una vez entrenado, los scripts auxiliares permiten puntuar nuevos registros:
-
-```bash
-python score_batch.py    # puntuación masiva sobre un CSV de entrada
-python inference.py      # inferencia unitaria de ejemplo
-```
-
----
 
 > **Autor:** Samuel García · [GitHub](https://github.com/samgarcia42)  
 > Proyecto realizado como parte de un *Challenge* de modelado de riesgo crediticio.
