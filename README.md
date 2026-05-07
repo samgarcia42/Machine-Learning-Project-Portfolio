@@ -4,7 +4,7 @@
 
 Este proyecto resuelve un problema clásico de **riesgo crediticio**: estimar la **probabilidad de impago (PD)** de un solicitante de un préstamo personal y traducir esa probabilidad a una decisión de negocio (aprobar / rechazar) y a un **precio (tasa de interés)** acorde al riesgo.
 
-El objetivo es construir un sistema interpretable, auditable y rentable, alineado con la práctica bancaria tradicional (*scorecard*) pero comparado contra modelos *machine learning* modernos (XGBoost, LightGBM) para validar que la simplicidad no sacrifica poder predictivo. La salida es un **score de 100 a 1000 puntos** (mayor score → menor riesgo) junto con una propuesta de **pricing por tiers** (bandas A, B, C…).
+El objetivo es construir un sistema interpretable, auditable y rentable, alineado con la práctica bancaria tradicional (*scorecard*) pero comparado contra modelos *machine learning* modernos (XGBoost, LightGBM) para validar que la simplicidad no sacrifica poder predictivo. La salida es un **score de 300 a 900 puntos** (mayor score → menor riesgo) junto con una propuesta de **pricing por tiers** (bandas A, B, C…).
 
 El proyecto cubre el ciclo completo: definición del target con criterio anti-leakage, EDA, ingeniería de variables (WOE/IV), modelado, elección de punto de corte cost-sensitive, calibración isotónica de probabilidades, propuesta de pricing y empaquetado en un pipeline reproducible serializado con `joblib`.
 
