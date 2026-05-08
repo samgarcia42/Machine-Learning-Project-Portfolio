@@ -24,8 +24,8 @@ Mi enfoque combina el análisis económico con técnicas avanzadas de **Machine 
 
 ## 🎓 Formación Académica
 
-* **Máster en Ciencia de Datos, Big Data and Business Analytics** | [cite_start]Universidad Complutense de Madrid[cite: 39].
-* **Grado en Economía** | [cite_start]Universidad Católica Andrés Bello[cite: 40].
+* **Máster en Ciencia de Datos, Big Data and Business Analytics** | Universidad Complutense de Madrid.
+* **Grado en Economía** | Universidad Católica Andrés Bello.
 
 ## 📫 Contacto
 
